@@ -1,0 +1,89 @@
+/*body{
+  background-color: orange;
+}*/
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 900px;
+}
+
+
+.recipe{
+  position:absolute;;
+  width: 600px;
+}
+
+.timedate{
+  width: 75px;
+  display: inline-block;
+}
+
+.date{
+  color: rgb(188, 205, 215);
+  font-size: 10px;
+}
+
+
+
+.time1{
+  color: rgb(108, 191, 238);
+  font-size: 26px;
+}
+
+.time2{
+  color: rgb(53, 148, 203);
+  font-size: 26px;
+}
+
+.circle{
+  width: 30px;
+}
+
+.vertical{
+  display:inline-block;
+  width: 450px;
+  position:absolute;
+  left: 100px;
+}
+
+
+.card1{
+  width: 420px;
+  background-color: rgb(108, 191, 238);
+  border: 1px solid rgb(108, 191, 238);
+  border-radius: 3px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 22px
+
+}
+
+.card2{
+  width: 420px;
+  background-color: rgb(53, 148, 203);
+  border: 1px solid rgb(53, 148, 203);
+  border-radius: 3px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+}
+
+.dish{
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.ingredients{
+  font-size: 8px;
+  font-family: sans-serif;
+  }
+
+.dish,
+.ingredients {
+  color: white;
+}
