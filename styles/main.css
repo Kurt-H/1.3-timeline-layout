@@ -1,6 +1,4 @@
-/*body{
-  background-color: orange;
-}*/
+
 
 *{
   -webkit-box-sizing: border-box;
@@ -9,81 +7,144 @@
 }
 
 .container{
-  width: 900px;
+  padding-top: 45px;
+}
+
+.timeline{
+  width: 998px;
+  padding 0;
+  margin:0 auto;
+  position:relative;
+  list-style: none;
+}
+
+.timeline:before{
+  content: "";
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  left: 152px;
+  width: 10px;
+  height: 800px;
+  background-color: rgb(184, 220, 245);
 }
 
 
-.recipe{
-  position:absolute;;
-  width: 600px;
+.timedate1,
+.timedate2{
+  display:inline-block;
+  float: left;
+  text-align: right;
 }
 
-.timedate{
-  width: 75px;
-  display: inline-block;
+.timedate1{
+  margin-left: -46px;
+}
+
+.timedate2{
+  margin-top: 348px;
+  margin-left: -121px;
+}
+
+.date,
+.time{
+  display: block;
 }
 
 .date{
-  color: rgb(188, 205, 215);
-  font-size: 10px;
+  color: rgb(191, 207, 221);
+  font-size: 14px;
 }
 
-
-
-.time1{
-  color: rgb(108, 191, 238);
-  font-size: 26px;
+.time{
+  color: rgb(128, 192, 238);
+  font-size: 48px;
+  font-weight:normal;
+  font-family: sans-serif;
 }
 
-.time2{
-  color: rgb(53, 148, 203);
-  font-size: 26px;
+.circle1,
+.circle2{
+  width: 56px;
+  height: 56px;
+  background-color: rgb(95, 166, 213);
+  border: 7px solid rgb(184, 220, 245);
+  border-radius: 50%;
+  position: absolute;
+  padding-top: 13px;
+  padding-left: 7px;
+
 }
 
-.circle{
-  width: 30px;
+.circle1{
+  top: -7px;
+  left: 129px;
 }
 
-.vertical{
-  display:inline-block;
-  width: 450px;
-  position:absolute;
-  left: 100px;
+.circle2{
+  top: 345px;
+  left: 129px;
 }
 
+.fa fa-tablet,
+.fa fa-desktop{
 
-.card1{
-  width: 420px;
-  background-color: rgb(108, 191, 238);
+  padding: 0;
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+}
+
+.fa {
+  color:white;
+}
+
+.card{
+  width: 784px;
+  float: right;
+  background-color: rgb(128, 192, 233);
   border: 1px solid rgb(108, 191, 238);
-  border-radius: 3px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-bottom: 22px
-
+  border-radius: 5px;
+  padding: 16px 38px 36px;
+  margin-bottom: 12px;
+  position:relative;
 }
 
-.card2{
-  width: 420px;
-  background-color: rgb(53, 148, 203);
-  border: 1px solid rgb(53, 148, 203);
-  border-radius: 3px;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-bottom: 22px;
+.card::before{
+position:absolute;
+content:"";
+width:0px;
+height:0px;
+border-top: 8px solid transparent;
+border-right: 8px solid rgb(128, 192, 233);
+border-bottom: 8px solid transparent;
+border-left: 8px solid transparent;
+top:11px;
+right: 783px;
 }
 
 .dish{
-  font-size: 12px;
+  font-size: 30px;
   font-family: sans-serif;
 }
 
 .ingredients{
-  font-size: 8px;
+  font-size: 18px;
+  line-height: 1.5;
   font-family: sans-serif;
   }
 
 .dish,
 .ingredients {
   color: white;
+}
+
+/***** HOVER *****/
+
+.card:hover{
+  background-color: rgb(80, 150, 198);
+}
+
+.time:hover{
+  color: rgb(80, 150, 198);
 }
